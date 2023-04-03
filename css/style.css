@@ -109,7 +109,7 @@ body {
 --about-vh: min-content;
 --searchConteiner-vh: min-content;
 --separator-vh: 0.3em
---altImgContainer-vh: 30vh;
+--altImgContainer-vh: 30vh;        /*???*/
 --apiLink-vh: 1fr;
 --border-radius: 0px;
     }
@@ -187,3 +187,96 @@ body {
     transition: easy all .5s;
 
 }
+
+.about {
+    height: var(--about-vh);
+    display: grid;
+    grid-template:      /*!Aligning sidebar!*/
+        "header header" max-content
+        "info sprite" 1fr
+        /2fr max-content;
+}.about>h1 {
+    grid-area: header;
+    text-align: center;
+}.about>p{
+    grid-area: info;
+}.about>img{
+    grid-area: sprite;
+    align-self: center;
+    justify-self: center;
+    height: max-content;
+}
+
+.searchContainer {
+        height: var(--searchContainer-vh);    /*2 the same keys??*/
+        position: relative;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+
+}.searchContainer button {
+    /*justify-items: right;*/                  
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+
+    background: radial-gradient(
+        white 0%,
+        white 28%,
+        black 31%,
+        black 40%,
+        white 43%,
+        white 55%, 
+        black 58%,
+       black
+    );
+}.searchContainer p {
+    color: hsl(184, 43%, 85%);
+}.inputField {
+    text-align: center;
+    margin-left: 0;
+}.searchDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.separator{
+    height: var(--separator-vh);
+    margin-top: 0.5em;
+    background: hsl(0, 0%, 20%);
+    box-shadow: 0 0 2px 1px hsl(0, 0%, 20%);
+}
+
+.altImgContainer {             /*???*/
+    height: var(--altImgContainer-vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.altImg {
+    visibility: hidden;
+    height: 75%;
+}
+
+
+.apiLink {
+    height: var(--apiLink-vh);
+    width: 40%;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}.apiLink h2 {
+    text-align: center;
+}.apiLink img {
+    width: 100%;
+    align-self: center;
+}
+
+
+/*------------------------------------------------------------------------*/
+/* --- Image grid collage ---*/
+
+
