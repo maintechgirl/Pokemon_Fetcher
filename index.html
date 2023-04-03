@@ -17,14 +17,15 @@
    <div class="about lightBlue">
      <h1>About <span id="name">Pockemon</span></h1>
      <p id="infotext">
-        Type: <span id="type"></span><br>
-        Color: <span id="color"></span><br>
-        Shape: <span id="shape"></span><br>
-        Height: <span id="height"></span><br>
-        Weight: <span id="weight"></span><br>
-        Habitat: <span id="habitat"></span><br>
-        Growth Rate <span id="growth_rate"></span><br>
-        Evolves From : <span id="evolves_from"></span><br>
+        Type:         <span id="type"></span><br>
+        Color:        <span id="color"></span><br>
+        Shape:        <span id="shape"></span><br>
+        Height:       <span id="height"></span><br>
+        Weight:       <span id="weight"></span><br>
+        Habitat:      <span id="habitat"></span><br>
+        Growth Rate:  <span id="growth_rate"></span><br>
+        Evolves From: <span id="evolves_from_species"></span><br>
+
      </p>
      <img class="sprite" id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Sprite pokemon image from the game">
    </div>
@@ -32,13 +33,59 @@
 
 
 
-</div>
+   <div class="searchContainer">
+    <input id="inputField" class="inputField lightBlue" type="text" placeholder="Enter A Pockemon Name">
+
+    <div class="searchDiv">
+        <button id="submitBtn" class="submitBtn" type="button"></button>
+        <p>Search</p>
+    </div>
+
+    <div class="searchDiv">
+        <button id="randomBtn" class="randomBtn" type="button" placeholder="Random"></button>
+        <p>Random</p>
+    </div>
+   </div>
+
+
+
+   <div class="separator"></div>
+
+
+
+   <div class="altImgContainer">
+
+
+     <div class="pokeball body pink">
+        <div class="pockeball center pink">
+
+        </div>
+     </div>
+
+     <img class="altImg" id="altImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png" alt="Sprite pokemon image from the game">
+   </div>
+
+
+   <div class="apiLink">
+<h2>Made using</h2>
+<a href="https://pokeapi.co">
+    <img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png" alt="PokeAPI Web Page">
+        </a>
+   </div>
 </div>
 
 
+
+<div id="imgDisplay" class="imgGrid">
+    </div>
+</div>
 
 
 
   <div class="sidebar s2"></div>
+
+
+
+
 </body>
 </html>
