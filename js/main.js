@@ -34,6 +34,28 @@ const pokemons = {
                 let pkl = this.list[pokemonName];
                 
                 console.log('createPokemon: Initial Json = ', pokemonJson);
+
+                 // Function to check if data is available
+            function LoadList(tagName, dimention, message){
+                if(pokemonJson[tagName]){
+                    if(dimention === 2){
+                        pkl[tagName] = pokemonJson[tagname].name;
+                    }else{
+                        pkl[tagName] = pokemonJson[tagname];
+                    }
+                    else{
+                        if(message){
+                            pkl[tagname] = message;
+                        }else{
+                            pkl[tagname] = "no data";
+                        }
+                    }
+                }
+
+
+                
+            }
+
             }
         }
     }
